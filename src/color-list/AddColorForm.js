@@ -1,5 +1,5 @@
 import React from "react";
-import { useInput } from "./hooks";
+import { useInput } from "../hooks";
 import { useColors } from "./ColorProvider";
 
 export default function AddColorForm() {

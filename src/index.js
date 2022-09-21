@@ -1,15 +1,23 @@
 import React from 'react';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { render } from 'react-dom';
-import BigList from './BigList';
+import GitHubUserComponent from './github-user/GitHubUser';
+// import ColorListComponent from './color-list/App';
+// import ColorProvider from './color-list/ColorProvider';
 
 const rootElement = document.getElementById("root");
 
 render(
+  // chapter6
+  // <ColorProvider>
+  //   <ColorListComponent />
+  // </ColorProvider>,
+  // document.getElementById("root")
+
+  // chapter8
   <React.StrictMode>
-    <BigList />
+    <GitHubUserComponent />
   </React.StrictMode>,
   rootElement
 )
