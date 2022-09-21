@@ -4,12 +4,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ColorProvider from "./ColorProvider";
 import { render } from 'react-dom';
+import GitHubUserComponent from './GitHubUser';
+
+const rootElement = document.getElementById("root");
 
 render(
-  <ColorProvider >
-    <App />
-  </ColorProvider>,
-  document.getElementById("root")
+  <React.StrictMode>
+    <GitHubUserComponent />
+  </React.StrictMode>,
+  rootElement
 )
 
 // If you want to start measuring performance in your app, pass a function
