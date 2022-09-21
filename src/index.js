@@ -2,15 +2,14 @@ import React from 'react';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ColorProvider from "./ColorProvider";
 import { render } from 'react-dom';
-import GitHubUserComponent from './GitHubUser';
+import BigList from './BigList';
 
 const rootElement = document.getElementById("root");
 
 render(
   <React.StrictMode>
-    <GitHubUserComponent />
+    <BigList />
   </React.StrictMode>,
   rootElement
 )
